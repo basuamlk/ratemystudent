@@ -5,8 +5,8 @@ export const createProject = (project) => {
         const fireStore = getFirestore();
         fireStore.collection('projects').add({
             ...project,
-            authorFirstName: 'Steven',
-            authorLastName: 'Desprez',
+            authorFirstName: '',
+            authorLastName: '',
             authorId: 123,
             createdAt: new Date()
         }).then(() =>  {
