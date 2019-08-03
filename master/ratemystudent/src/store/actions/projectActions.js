@@ -1,13 +1,10 @@
 
 
-export const createProject = (project) => {
+export const createProject = (project) => {//used to create a new student in firebase
     return (dispatch, getState, {getFirebase, getFirestore}) => {
         const fireStore = getFirestore();
         fireStore.collection('projects').add({
             ...project,
-            authorFirstName: '',
-            authorLastName: '',
-            authorId: 123,
             createdAt: new Date()
         }).then(() =>  {
             dispatch({type: 'CREATE_PROJECT', project});

@@ -15,6 +15,7 @@ class Dashboard extends Component {
     return (
       <div className="dashboard container">
         <h2>Browse Sudent Profiles</h2>
+        <h4>(Click one to view profile)</h4>
         <div className="row">
           <div className="col s12 m6">
             <ProjectList projects={projects} />

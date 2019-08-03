@@ -2,6 +2,14 @@ html {
   min-height: 100%;
 }
 
+h2 {
+  color: lightblue
+}
+
+h4 {
+  color: white
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
