@@ -5,7 +5,10 @@ Rate My Student project is designed to give an opportunity for professors to rat
 There’s an authentication system for teachers to login. We also will have profile creation that the teachers will make for the students. 
 There is also a list of students to search from based off when their profiles were created.
 ## Students' Profile Page
-### (picture here)
+<img src="RMSprofiles.jpg"
+    align="middle"
+     alt="Rate My Students Profile Page"
+     style="float: left; margin-right: 10px; width: 50%; height: 50%" />
 ## System Architecture
 <img src="RMSarchitecture.png"
     align="middle"
