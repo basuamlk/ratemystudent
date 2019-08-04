@@ -12,7 +12,7 @@ class Dashboard extends Component {
     const { projects, auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> //if the user is not signed in redirect them to be signed innnnn
 
-    return (
+    return (//basically the home page of the website, displays student profiles in a column format
       <div className="dashboard container">
         <h2>Browse Sudent Profiles</h2>
         <h4>(Click one to view profile)</h4>

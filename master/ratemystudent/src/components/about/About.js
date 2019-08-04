@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class About extends Component {
+export default class About extends Component {//info about the website
     render() {
         return (
         <div className="container section about">

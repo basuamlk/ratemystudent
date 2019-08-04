@@ -9,7 +9,7 @@ const Navbar = (props) => {
   // console.log(auth);
   const links = auth.uid ? <SignedInLinks profile={profile} /> : <SignedOutLinks />;//display which links should be accessable based off if a user is logged in or not
 
-  return (
+  return (//display the navigation bar 
     <nav className="nav-wrapper grey darken-3">
       <div className="container">
         <Link to='/' className="brand-logo">Rate My Student</Link>

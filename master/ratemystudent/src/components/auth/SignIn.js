@@ -4,7 +4,7 @@ import { signIn } from '../../store/actions/authActions'
 import { Redirect } from 'react-router-dom'
 
 class SignIn extends Component {
-  state = {
+  state = {//components to be returned to firebase
     email: '',
     password: ''
   }
@@ -17,7 +17,7 @@ class SignIn extends Component {
     e.preventDefault();
     this.props.signIn(this.state)
   }
-  render() {
+  render() {//displays form for users to sign in with
     const { authError, auth } = this.props;
     if (auth.uid) return <Redirect to='/' /> 
     return (

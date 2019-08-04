@@ -8,7 +8,8 @@ class CreateProject extends Component {//where we will create new students
   state = {
     name: '',
     info: '',
-    class: ''
+    class: '',
+    photo: ''
   }
   handleChange = (e) => {
     this.setState({
@@ -39,7 +40,7 @@ class CreateProject extends Component {//where we will create new students
           <div className="input-field">
             <textarea id="info" className="materialize-textarea" onChange={this.handleChange}></textarea>
             <label htmlFor="info">Information About the Student</label>
-          </div>
+          </div>   
           <div className="input-field">
             <button className="btn red lighten-1">Create</button>
           </div>
