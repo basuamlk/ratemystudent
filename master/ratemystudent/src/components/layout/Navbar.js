@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import SignedInLinks from './SignedInLinks'
 import SignedOutLinks from './SignedOutLinks'
 import { connect } from 'react-redux'
+import Media from 'react-media';
 
 const Navbar = (props) => {
   const { auth, profile } = props;
@@ -11,8 +12,16 @@ const Navbar = (props) => {
 
   return (//display the navigation bar 
     <nav className="nav-wrapper grey darken-3">
-      <div className="container">
-        <Link to='/' className="brand-logo">Rate My Student</Link>
+      <div className="container"><Media query="(max-width: 823px)">
+          {matches =>
+            matches ? (
+              <Link to='/' className="brand-logo"></Link>
+            ) : (
+              <Link to='/' className="brand-logo">Rate My Student</Link>
+            )
+          }
+        </Media>
+        
         {links}
       </div>
     </nav>
