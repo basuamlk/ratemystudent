@@ -18,7 +18,7 @@ There is also a list of students to search from based off when their profiles we
 ## Instructions
 ``` 
 1. git clone the repository
-2. Navigate your current directory to /ratemystudent
+2. Navigate your current directory to /ratemystudent/master/ratemystudent
 3. npm install
 4. npm start
 6. You are ready to use Rate My Student!
